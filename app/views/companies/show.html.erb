@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+<h3> Company </h3>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @company.population %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @company.category.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @company.description %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @company.keywords %>
+</p>
+
+<strong>Address information</strong>
+<p>
+  <strong>Country:</strong>
+  <%= @company.address.country %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @company.address.state %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @company.address.address_line %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @company.address.city %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @company.address.zip_code %>
+</p>
+
+<p>
+  <strong>Nearest city:</strong>
+  <%= @company.nearest_city %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @company.distance %>
+</p>
+
+<strong> Financial Information </strong>
+<p>
+  <strong>Last reported:</strong>
+  <%= @company.financial_information.last_reported %>
+</p>
+
+<p>
+  <strong>Revenue:</strong>
+  <%= @company.financial_information.revenue %>
+</p>
+<p>
+  <strong>Income:</strong>
+  <%= @company.financial_information.income %>
+</p>
+
+
+<div>
+  <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@company.address.latitude}%2C#{@company.address.longitude}" %>
+</div>
+
+
+
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

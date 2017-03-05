@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_reported: 2017-03-05
+  revenue: 9.99
+  income: 9.99
+  company: one
+
+two:
+  last_reported: 2017-03-05
+  revenue: 9.99
+  income: 9.99
+  company: two

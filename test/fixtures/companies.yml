@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  nearest_city: MyString
+  distance: MyString
+  population: MyString
+  category: one
+  description: MyText
+  keywords: MyString
+
+two:
+  name: MyString
+  nearest_city: MyString
+  distance: MyString
+  population: MyString
+  category: two
+  description: MyText
+  keywords: MyString

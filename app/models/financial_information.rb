@@ -1,0 +1,3 @@
+class FinancialInformation < ApplicationRecord
+
+end
